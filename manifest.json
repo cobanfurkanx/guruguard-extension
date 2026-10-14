@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "GuruGuard \u2014 Instagram profile checks",
+  "version": "1.1.1",
+  "description": "Checks public profile text, shows source-backed concerns, and helps you block unwanted accounts.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://guruguard.shepardai.pro/*"
+  ],
+  "optional_host_permissions": [
+    "https://www.instagram.com/*"
+  ],
+  "background": {
+    "service_worker": "background/local-worker.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "GuruGuard"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

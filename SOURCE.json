@@ -1,0 +1,7 @@
+{
+  "extensionVersion": "1.1.1",
+  "schemaVersion": 2,
+  "rulesVersion": "v7-2026-10-13",
+  "sourceCommit": "13b620c3dfaa00c4c423e2c766e0e5c1b5730ee4",
+  "scope": "Extension and browser-required shared modules only; no application history."
+}
