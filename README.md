@@ -30,7 +30,7 @@ The generated ZIP contains built extension files, without source maps. No server
 - Reads visible public profile text and author-owned opened captions/highlights. Unopened or unavailable content is excluded.
 - Excludes inbox, login/account settings and private-profile checks. Does not request cookie access or read your Instagram password.
 - A lookup sends the username to GuruGuard. Bio-link inspection sends the link and username. Explicit contributions/suggestions send the text you choose to submit.
-- Optional eligible AI checks send selected text through GuruGuard; AI credits currently remain a labelled demo with model calls, purchases and account connection paused.
+- Optional eligible AI checks send selected public text through GuruGuard to OpenRouter/model providers. Providers may retain this text; the service requests providers that disallow training. Sign-in starts a 30-day trial with five eligible AI checks per UTC day, subject to shared free-provider capacity. After the trial, AI requires credits. Purchases remain paused; no subscription or automatic charge is created. Older servers can still return an explicitly labelled mock mode.
 - Hiding stores selected usernames locally and is reversible. Blocking opens Instagram's controls; you confirm the final action.
 
 Details and retention are described in the linked privacy policy. This is not a guarantee of fraud detection. A score is review priority in available content, not fraud probability. Community opinions remain separate from scoring.
@@ -39,7 +39,7 @@ Details and retention are described in the linked privacy policy. This is not a 
 
 `src/background`, `src/content`, `src/popup` and `src/lib` contain the extension. `src/shared` contains only the client contracts, normalization, local rules and request helpers required to build it. Server collection, databases, billing implementation, private datasets and credentials are not included.
 
-Browser-local rules are distributed to users and are intentionally public here. This repository is a standalone extraction of extension 1.1.1; the original application repository is private. Maintainers must keep shared contract/rule versions and extension releases aligned with the service, using reviewed changes in both repositories.
+Browser-local rules are distributed to users and are intentionally public here. This repository contains extension 1.1.2; the original application repository is private. Maintainers must keep shared contract/rule versions and extension releases aligned with the service, using reviewed changes in both repositories.
 
 Tests use synthetic Instagram markup and mocked Chrome APIs. They verify privacy boundaries, navigation, review controls, quotas-free mock credits and deterministic false positives. They do not claim live installed-extension or native mobile validation.
 

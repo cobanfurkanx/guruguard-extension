@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "GuruGuard \u2014 Instagram profile checks",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Checks public profile text, shows source-backed concerns, and helps you block unwanted accounts.",
   "permissions": [
     "activeTab",

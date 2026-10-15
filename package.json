@@ -1,6 +1,6 @@
 {
   "name": "guruguard-extension",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "private": true,
   "scripts": {
     "build": "esbuild src/background/local-worker.ts src/content/content.ts src/popup/popup.ts --bundle --format=esm --outdir=dist --outbase=src --sourcemap && npm run copy:static",
